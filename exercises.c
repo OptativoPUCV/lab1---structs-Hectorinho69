@@ -84,13 +84,12 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
       result[k]=arr1[i];
       i++;
     }
-    else{ //esta opcion es decir que el numero en el array1 no sea mayor que el numero en el array 2 tambien contempla el caso en que sean el mismo valor, asi la funcion no se quedara estancada
+    else{
       result[k]=arr2[j];
       j++;
     }
     k++;
   }
-  //en algun punto si no son del mismo tamaño, quedan numeros sin ingresar al tercer array asi que hay que incluir los que faltan en caso que que uno o el otro se haya agotado
   while(i<size1){
     result[k]=arr1[i];
     i++;
