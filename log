@@ -72,3 +72,14 @@ Thu 17 Aug 2023 04:32:55 PM UTC:
  tests:  0|7
 total_score: 0/70
 41e40aa
+Thu 17 Aug 2023 04:38:48 PM UTC: 
+ exercises.c | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:7: error: ‘maximo’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   14 |   int maximo;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5117070
