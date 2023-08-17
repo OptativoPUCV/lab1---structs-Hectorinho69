@@ -140,3 +140,25 @@ Thu 17 Aug 2023 04:46:33 PM UTC:
  tests:  0|6
 total_score: 10/70
 c8d76ba
+Thu 17 Aug 2023 04:59:54 PM UTC: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+Thu 17 Aug 2023 05:02:53 PM UTC: 
+ exercises.c | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:43:7: error: redefinition of ‘i’
+   43 |   int i=0, j = size-1;
+      |       ^
+exercises.c:30:7: note: previous definition of ‘i’ with type ‘int’
+   30 |   int i = 0;
+      |       ^
+exercises.c:43:12: error: redefinition of ‘j’
+   43 |   int i=0, j = size-1;
+      |            ^
+exercises.c:31:9: note: previous definition of ‘j’ with type ‘int’
+   31 |     int j = size - 1;
+      |         ^
+Compilation failed
+5da160e
