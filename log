@@ -162,3 +162,9 @@ exercises.c:31:9: note: previous definition of ‘j’ with type ‘int’
       |         ^
 Compilation failed
 5da160e
+Thu 17 Aug 2023 05:03:16 PM UTC: 
+ exercises.c | 10 ----------
+ 1 file changed, 10 deletions(-)
+ tests:  0|5
+total_score: 20/70
+9ea9910
