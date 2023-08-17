@@ -112,42 +112,20 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size)
 {
-  // Revisar caso a caso y retornar el resultado en caso positivo, y si no encaja en ordenado ascendente o descendente, se retornará como desordenado
-  
-  int cumple = 1;
-  int i = 0;
-  
-  // Ascendente
-  int maximo = arr[0];
-  while (cumple == 1 && i < size - 1) {
-    if (arr[i] >= maximo) {
-      maximo = arr[i];
-      i++;
-    } else {
-      cumple = 0;
+  int ascendente=1;
+  int descendente=1;
+  for(int i=1;i<size;i++){
+    if(arr[i]>=arr[i-1]){
+      descendente = 0;
+    }
+    if(arr[i]<=arr[i-1]){
+      ascendente = 0;
     }
   }
-  if (cumple == 1) {
-    return 1; // Está ordenado en orden ascendente
-  }
+  if(ascendente == 1){return(1);}
+  if(descendente == 1){return(-1);}
+  return(0);
   
-  // Descendente
-  cumple = 1;
-  i = 0;
-  int minimo = arr[0];
-  while (cumple == 1 && i < size - 1) {
-    if (arr[i] <= minimo) {
-      minimo = arr[i];
-      i++;
-    } else {
-      cumple = 0;
-    }
-  }
-  if (cumple == 1) {
-    return -1; // Está ordenado en orden descendente
-  }
-  
-  return 0; // No está ordenado
 }
 
 /*
