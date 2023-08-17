@@ -115,34 +115,37 @@ int checkSorted(int arr[], int size)
   //revisar caso a caso y retornar el resultado en caso positivo y si no encaja en ordenado ascendente o descendente se retornara como desordenado
   int cumple = 1;
   int i = 0;
-  //ascendente
-  int maximo;
-  maximo = arr[0];
-  while(cumple==1 && i<size){
-    if(arr[i]>=maximo){
-      maximo = arr[i];
-      i++;
+  / Ascendente
+    int maximo = arr[0];
+    while (cumple == 1 && i < size - 1) {
+        if (arr[i] >= maximo) {
+            maximo = arr[i];
+            i++;
+        } else {
+            cumple = 0;
+        }
     }
-    else
-    {cumple = 0;}
-    if(i==size-1){return(1);}
-  }
-  
-  //descendente
-  cumple = 1;
-  i = 0;
-  int minimo = arr[0];
-  while(cumple==1 && i<size){
-    if(arr[i]<=minimo){
-      minimo = arr[i];
-      i++;
+    if (cumple == 1) {
+        return 1;
     }
-    else
-    {cumple=0;}
-    if(i==size-1){return(-1);}
-  }
 
-  return(0);
+    // Descendente
+    cumple = 1;
+    i = 0;
+    int minimo = arr[0];
+    while (cumple == 1 && i < size - 1) {
+        if (arr[i] <= minimo) {
+            minimo = arr[i];
+            i++;
+        } else {
+            cumple = 0;
+        }
+    }
+    if (cumple == 1) {
+        return -1;
+    }
+
+    return 0;
 
 }
 

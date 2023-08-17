@@ -307,3 +307,17 @@ Thu 17 Aug 2023 07:23:09 PM UTC:
  tests:  0|3
 total_score: 40/70
 4543568
+Thu 17 Aug 2023 07:25:45 PM UTC: 
+ exercises.c | 29 ++++++++++++++++-------------
+ 1 file changed, 16 insertions(+), 13 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:118:3: error: expected expression before ‘/’ token
+  118 |   / Ascendente
+      |   ^
+exercises.c:121:23: error: ‘maximo’ undeclared (first use in this function)
+  121 |         if (arr[i] >= maximo) {
+      |                       ^~~~~~
+exercises.c:121:23: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+736cf2c
