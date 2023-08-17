@@ -110,3 +110,27 @@ Thu 17 Aug 2023 04:40:32 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 d5b6ac6
+Thu 17 Aug 2023 04:46:18 PM UTC: 
+ exercises.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:31: error: statement with no effect [-Werror=unused-value]
+   14 |   for (int i = 0 ; i < size ; i{
+      |                               ^
+exercises.c:14:32: error: expected ‘)’ before ‘{’ token
+   14 |   for (int i = 0 ; i < size ; i{
+      |       ~                        ^
+      |                                )
+exercises.c:20:1: error: expected expression before ‘}’ token
+   20 | }
+      | ^
+exercises.c:13:7: error: unused variable ‘maximo’ [-Werror=unused-variable]
+   13 |   int maximo = arr[0];
+      |       ^~~~~~
+exercises.c:20:1: error: control reaches end of non-void function [-Werror=return-type]
+   20 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9d18086
