@@ -57,8 +57,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   }
   int *pares= (int*)malloc(cantidad * sizeof(int));
   //se lee cada valor del arreglo original y se pasa el valor a un nuevo espacio del nuevo arreglo solo si es par
+  int j=0;
   for(int i=0;i<size;i++){
-    int j=0;
     if((arr[i]%2) == 0){
       pares[j] = arr[i];
       j++;
