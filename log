@@ -94,3 +94,8 @@ exercises.c:23:10: error: ‘maximo’ may be used uninitialized in this functio
 cc1: all warnings being treated as errors
 Compilation failed
 e4b3277
+Thu 17 Aug 2023 04:39:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+e2828f7
