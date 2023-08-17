@@ -90,6 +90,17 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
     }
     k++;
   }
+  //en algun punto si no son del mismo tamaño, quedan numeros sin ingresar al tercer array asi que hay que incluir los que faltan en caso que que uno o el otro se haya agotado
+  while(i<size1){
+    result[k]=arr1[i];
+    i++;
+    k++;
+  }
+  while(j<size2){
+    result[k]=arr2[j];
+    j++;
+    k++;
+  }
 }
 
 /*
