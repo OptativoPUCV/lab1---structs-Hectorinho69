@@ -75,7 +75,22 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) 
+{
+  int i=0, j=0, k=0;
+
+  while(i<size1 && j<size2){
+    if(arr1[i]>arr2[j]){
+      result[k]=arr1[i];
+      i++;
+    }
+    else{ //esta opcion es decir que el numero en el array1 no sea mayor que el numero en el array 2 tambien contempla el caso en que sean el mismo valor, asi la funcion no se quedara estancada
+      result[k]=arr2[j];
+      j++;
+    }
+    k++;
+  }
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
