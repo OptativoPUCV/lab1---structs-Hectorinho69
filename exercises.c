@@ -13,7 +13,7 @@ int findMax(int arr[], int size){
   int i = 0;
   int maximo=0;
   
-  while (&arr[i]){
+  while (arr[i]){
     if(arr[i]>maximo){
       maximo = arr[i];
     }
