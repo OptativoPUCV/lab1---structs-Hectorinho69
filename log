@@ -223,3 +223,14 @@ exercises.c:61:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 f1bf288
+Thu 17 Aug 2023 06:10:55 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:15: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   60 |   return pares[j];
+      |          ~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+c085432
