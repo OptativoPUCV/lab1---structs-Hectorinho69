@@ -35,3 +35,14 @@ exercises.c:15:15: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 b3bcfcb
+Thu 17 Aug 2023 04:31:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:15:16: error: comparison between pointer and integer [-Werror]
+   15 |   while(arr[i] != NULL){
+      |                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+5e0c503
