@@ -48,16 +48,32 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
-  int pares[*newSize];
-  int j = 0;
-  for(int i=0;i<size;i++){
-    if( (arr[i]%2)==0 ){
-      pares[j]=arr[i];
-      j++;
+  // Contar la cantidad de números pares
+    int count = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            count++;
+        }
     }
-  }
-  
-  return *pares[j];
+
+    // Crear un nuevo arreglo para los números pares
+    int *result = (int *)malloc(count * sizeof(int));
+    if (result == NULL) {
+        *newSize = 0; // No se pudo asignar memoria, tamaño del nuevo arreglo es 0
+        return NULL;
+    }
+
+    // Llenar el nuevo arreglo con los números pares
+    int index = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            result[index] = arr[i];
+            index++;
+        }
+    }
+
+    *newSize = count;
+    return result;
 }
 
 /*
