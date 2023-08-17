@@ -64,6 +64,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       j++;
     }
   }
+  *newSize = cantidad;
   return pares;
 }
 
