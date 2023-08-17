@@ -78,7 +78,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
   int i=0, j=0, k=0;
-
+  //se comparando en ambos arreglos y se pasa el menor dato al arreglo fusion
   while(i<size1 && j<size2){
     if(arr1[i]<arr2[j]){
       result[k]=arr1[i];
@@ -90,6 +90,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
     }
     k++;
   }
+  //en cierto punto si un arreglo es mas grande que otro, hay que pasar el resto de los datos al arreglo fusion
   while(i<size1){
     result[k]=arr1[i];
     i++;
