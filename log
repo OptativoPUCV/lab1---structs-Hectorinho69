@@ -66,3 +66,9 @@ exercises.c:13:7: error: unused variable ‘maximo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d7db387
+Thu 17 Aug 2023 04:32:55 PM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  0|7
+total_score: 0/70
+41e40aa
