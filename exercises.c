@@ -29,10 +29,13 @@ invierta el orden de sus elementos.
 void reverseArray(int arr[], int size) {
   int i = 0;
   int j = size-1;
+  //contadores para ir cambiando posiciones desde los extremos del arreglo hacia el centro
   while(i<j){
+  //sustitucion de los valores con ayuda de un auxiliar
     int aux = arr[i];
     arr[i]=arr[j];
     arr[j]=aux;
+  //acerca los contadores
     i++;
     j--;
   }
