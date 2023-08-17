@@ -115,7 +115,7 @@ int checkSorted(int arr[], int size)
   //revisar caso a caso y retornar el resultado en caso positivo y si no encaja en ordenado ascendente o descendente se retornara como desordenado
   int cumple = 1;
   int i = 0;
-  / Ascendente
+  // Ascendente
     int maximo = arr[0];
     while (cumple == 1 && i < size - 1) {
         if (arr[i] >= maximo) {

@@ -321,3 +321,9 @@ exercises.c:121:23: error: ‘maximo’ undeclared (first use in this function)
 exercises.c:121:23: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 736cf2c
+Thu 17 Aug 2023 07:26:02 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+dcc58e4
