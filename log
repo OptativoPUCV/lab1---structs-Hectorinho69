@@ -52,3 +52,17 @@ Thu 17 Aug 2023 04:32:09 PM UTC:
  tests:  0|7
 total_score: 0/70
 af70b8b
+Thu 17 Aug 2023 04:32:41 PM UTC: 
+ exercises.c | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   14 |   int i=0;
+      |       ^
+exercises.c:13:7: error: unused variable ‘maximo’ [-Werror=unused-variable]
+   13 |   int maximo=0;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d7db387
