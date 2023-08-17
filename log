@@ -83,3 +83,14 @@ exercises.c:14:7: error: ‘maximo’ may be used uninitialized in this function
 cc1: all warnings being treated as errors
 Compilation failed
 5117070
+Thu 17 Aug 2023 04:39:01 PM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:23:10: error: ‘maximo’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   23 |   return maximo;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e4b3277
