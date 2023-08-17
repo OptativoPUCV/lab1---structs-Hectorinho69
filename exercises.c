@@ -19,7 +19,7 @@ int findMax(int arr[], int size){
     i++;
   }
     
-  return 0;
+  return maximo;
 }
 
 /*
