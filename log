@@ -192,3 +192,20 @@ Thu 17 Aug 2023 05:53:54 PM UTC:
  tests:  0|5
 total_score: 20/70
 40f32b6
+Thu 17 Aug 2023 06:10:20 PM UTC: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:17: error: expected expression before ‘]’ token
+   60 |   return *pares[];
+      |                 ^
+exercises.c:51:7: error: variable ‘pares’ set but not used [-Werror=unused-but-set-variable]
+   51 |   int pares[*newSize];
+      |       ^~~~~
+exercises.c:61:1: error: control reaches end of non-void function [-Werror=return-type]
+   61 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8e0aa91
