@@ -150,6 +150,7 @@ typedef struct {
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion)
 {
+  //se agrega cada dato al tipo de dato libro, y en caso de la informacion del autor, com es un dato de tipo autor no es un puntero se usa punto en vez de flechita 
   strcpy(libro->titulo, titulo);
   strcpy(libro->autor.nombre, nombreAutor);
   libro->autor.anioNacimiento = anioNacimiento;
