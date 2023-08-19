@@ -429,3 +429,15 @@ exercises.c:208:5: note: previous definition of ‘main’ with type ‘int()’
       |     ^~~~
 Compilation failed
 07d4c8a
+Sat 19 Aug 2023 12:05:43 AM UTC: 
+ exercises.c | 31 -------------------------------
+ 1 file changed, 31 deletions(-)
+In file included from test.c:1:
+exercises.c:210:3: error: expected identifier or ‘(’ before ‘return’
+  210 |   return primero;
+      |   ^~~~~~
+exercises.c:211:1: error: expected identifier or ‘(’ before ‘}’ token
+  211 | }
+      | ^
+Compilation failed
+46f23ff

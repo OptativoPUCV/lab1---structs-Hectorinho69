@@ -175,6 +175,7 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 {
+  
   if (size <= 0) {
     return NULL; // Manejar el caso de arreglo vacío o tamaño negativo
   }
@@ -203,38 +204,7 @@ Nodo *crearListaEnlazada(int arr[], int size)
   }
   
   return primero;
-}
-
-int main() {
-  int arr[] = {1, 2, 3, 4, 5};
-  int size = sizeof(arr) / sizeof(arr[0]);
-
-  Nodo *lista = crearListaEnlazada(arr, size);
-
-  // Ahora puedes recorrer la lista enlazada e imprimir los números
-  Nodo *current = lista;
-  while (current != NULL) {
-    printf("%d ", current->numero);
-    current = current->siguiente;
-  }
-
-  // Recuerda liberar la memoria de los nodos cuando ya no los necesites
-  current = lista;
-  while (current != NULL) {
-    Nodo *temp = current;
-    current = current->siguiente;
-    free(temp);
-  }
-
-  return 0;
-}
-Este código crea una lista enlazada a partir de un arreglo de números y luego la imprime. Además, maneja errores de asignación de memoria y asegura la liberación adecuada de memoria cuando ya no se necesita la lista enlazada.
-
-
-
-
-
-  
+        
   }
   
   return primero;
