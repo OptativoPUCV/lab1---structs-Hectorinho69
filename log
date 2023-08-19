@@ -403,3 +403,29 @@ Sat 19 Aug 2023 12:04:16 AM UTC:
  tests:  0|1
 total_score: 60/70
 0ea9c60
+Sat 19 Aug 2023 12:05:15 AM UTC: 
+ exercises.c | 54 +++++++++++++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 51 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c:231:1: error: unknown type name ‘Este’
+  231 | Este código crea una lista enlazada a partir de un arreglo de números y luego la imprime. Además, maneja errores de asignación de memoria y asegura la liberación adecuada de memoria cuando ya no se necesita la lista enlazada.
+      | ^~~~
+exercises.c:231:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘crea’
+  231 | Este código crea una lista enlazada a partir de un arreglo de números y luego la imprime. Además, maneja errores de asignación de memoria y asegura la liberación adecuada de memoria cuando ya no se necesita la lista enlazada.
+      |             ^~~~
+exercises.c:231:13: error: unknown type name ‘crea’
+exercises.c:240:3: error: expected identifier or ‘(’ before ‘return’
+  240 |   return primero;
+      |   ^~~~~~
+exercises.c:241:1: error: expected identifier or ‘(’ before ‘}’ token
+  241 | }
+      | ^
+test.c:382:5: error: redefinition of ‘main’
+  382 | int main(int argc, char *argv[]) {
+      |     ^~~~
+In file included from test.c:1:
+exercises.c:208:5: note: previous definition of ‘main’ with type ‘int()’
+  208 | int main() {
+      |     ^~~~
+Compilation failed
+07d4c8a
