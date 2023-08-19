@@ -175,7 +175,6 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 {
-  
   if (size <= 0) {
     return NULL; // Manejar el caso de arreglo vacío o tamaño negativo
   }
@@ -204,7 +203,4 @@ Nodo *crearListaEnlazada(int arr[], int size)
   }
   
   return primero;
-        
-  }
-  
 }
