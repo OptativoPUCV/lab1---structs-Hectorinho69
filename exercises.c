@@ -175,21 +175,11 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 {
-  if (size <= 0) {
-    return NULL; // Manejar el caso de arreglo vacío o tamaño negativo
-  }
-  
   Nodo *primero = NULL;
   Nodo *current = NULL;
   
   for (int i = 0; i < size; i++) {
     Nodo *newNodo = (Nodo*)malloc(sizeof(Nodo));
-    if (newNodo == NULL) {
-      // Manejar error de asignación de memoria
-      // Aquí podrías agregar liberación de memoria de los nodos creados previamente
-      return NULL;
-    }
-    
     newNodo->numero = arr[i];
     newNodo->siguiente = NULL;
     
